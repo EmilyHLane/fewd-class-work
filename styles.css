@@ -1,0 +1,27 @@
+
+body {
+	background-color: #f4f4f4;
+}
+
+h1 {
+	background-color: #dd0261;
+	color: white;
+	padding: 40px;
+}
+
+p {
+	padding: 0 0 0 40px;
+}
+
+h2 {
+	padding: 0 0 0 40px;
+}
+
+.introduction {
+	font-size: 20px;
+}
+
+.topnav {
+	font-size: 20px;
+	color: #494747;
+}
