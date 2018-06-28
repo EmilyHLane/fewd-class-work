@@ -1,6 +1,7 @@
 
 body {
-	background-color: #f4f4f4;
+	background-color: #edeaea;
+	color: #2d2d2d;
 }
 
 h1 {
@@ -11,7 +12,6 @@ h1 {
 
 .introduction {
 	font-size: 20px;
-	padding: 0 0 0 40px;
 }
 
 .topnav {
@@ -20,5 +20,5 @@ h1 {
 }
 
 .indentcontent {
-	padding: 0 0 0 40px;
+	padding: 0 40px 0 40px;
 }
