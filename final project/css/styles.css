@@ -1,0 +1,124 @@
+/* Color Palette
+light warm brown  rgb(253,231,224)
+medium brown      rgb(96, 53, 37)
+warm pink         rgb(255,189,189)
+dark pink		  rgb(198, 7, 74)
+pale yellow       rgb(253,250,184)
+mint green        rgb(174,234,211)
+bright green      rgb(0, 255, 59)
+chocolate brown   rgb(81, 41, 16)
+*/
+
+/*fonts
+display
+	font-family: 'Lobster Two', cursive;
+	font-family: 'Nixie One', serif;
+	font-family: 'Kirang Haerang', sans-serif;
+regular
+	font-family: 'Quicksand', sans-serif; -->find narrower font
+	*/
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		text-align: center;
+		margin: 0, 10px 10px 10px;
+	}
+
+	#landing-page {
+		background: url("https://static1.squarespace.com/static/572eb42b7da24fce826c37f2/5758ebdd4c2f85732d8f7e03/575991cab6aa606bb022e0e8/1465487860439/Magpies_Flavors-16x9-v3.jpg?format=1500w");
+		background-size: cover;
+	}
+
+	#sorry-page {
+		background: url("../img/cones.jpg");
+		background-size: cover;
+	}
+
+	h1 {
+		font-family: arial;
+		font-size: 50px;
+		color: white;
+		text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+		margin: 30px 10px;
+	}
+
+	#sorry-main h1 {
+		margin: 0;
+		padding: 30px;
+	}
+
+	#home-header {
+		font-family: 'Lobster Two', cursive;
+		font-size: 60px;
+		margin: 30px 10px 0 10px;
+	}
+
+	#home-sf {
+		font-family: 'Kirang Haerang', sans-serif;
+		color: rgb(118, 120, 122);
+		font-size: 25px;
+		margin-top: 0;
+	}
+
+	.nav-header {
+		background-color: white;
+	}
+
+	header {
+		padding: 10px;
+	}
+	
+	nav a {
+		margin: 90px;
+		font-family: 'Kirang Haerang', sans-serif;
+		font-size: 25px;
+		color: rgb(118, 120, 122);
+	}
+
+	h2, .sorry p {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 30px;
+		color: rgb(102, 49, 17);
+	}
+	.sorry a {
+		color: rgb(0, 255, 59);
+		font-weight: 700;
+	}
+
+	#homepage-main {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#homepage-main article {
+		border: 1px solid rgba(0,0,0,0);
+		border-radius: 300px;
+		width: 300px;
+		height: 300px;
+		margin: 10px;
+		text-align: center;
+		background-color: rgba(253,231,224, .5);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	main {
+		margin: 30px;
+	}
+
+	#sorry-main {
+		margin: 0;
+		padding-bottom: 300px;
+		background: linear-gradient(white, rgba(255,255,255, 0));	
+	}
+
