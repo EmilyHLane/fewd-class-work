@@ -1,0 +1,58 @@
+body {
+	max-height: 600px;
+	/*background: rgb(249, 229, 184);*/
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.temp-convert {
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	margin: 30px 0;
+	text-align: center;
+}
+
+.c-block {
+	width: 50%;
+}
+
+.f-block {
+	width: 50%;
+}
+
+input {
+	height: 30px;
+	width: 50px;
+	text-align: center;
+}
+
+.f-block, .c-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.start-with-c {
+	display: none;
+}
+
+.start-with-f {
+	display: none;	
+}
+
+.big-c {
+	font-size: 500px;
+}
+
+.big-f {
+	font-size: 500px;
+}
+
+
+
+
+
+
