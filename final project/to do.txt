@@ -1,0 +1,10 @@
+to do:
+
+1. mark ice cream destinations on map -- DONE
+2. use users current location to center map - see geolocation documentation
+
+3. add destinations list to page
+4. remove map controls
+5. add maps to other web pages
+6. add more ice cream destinations
+7. change marker image/shape

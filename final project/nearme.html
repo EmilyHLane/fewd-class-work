@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Lobster|Lobster+Two:400,700|Nixie+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kirang+Haerang" rel="stylesheet">
 	<title>Ice Cream Near Me</title>
+	<meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
 </head>
 <body>
 	<header class="nav-header">
@@ -21,14 +23,13 @@
 	</header>
 
 	<main>
-		<section class="show-map">
-		</section>
+
+		<div id="map"></div>
 
 		<section class="place-container">
-
 			<section class="place-list">
-				<a href=" ">
-					<p class="place-name"></p>
+				<a href="#">
+					<p class="Salt & Straw"></p>
 				</a>
 				<p class="place-address"></p>
 			</section>
@@ -36,6 +37,9 @@
 		</section>
 
 	</main>
-
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsZtvy6z4xYMXIVSv4tnylIQNPo8AvmQY&callback=initMap"
+    async defer></script>
+	<script src="jquery.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
