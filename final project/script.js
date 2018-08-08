@@ -1,24 +1,35 @@
-//alert("javascript is working");
-//sf
-/*
-var map;
+
+var infoWindow;
 function initMap() {
-	map = new google.maps.Map(document.getElementById('map'), {
-		center: {lat: 37.774929, lng: -122.419416},
-		zoom: 9
-	});
-}*/
+//geoloc
+infoWindow = new google.maps.InfoWindow;
+if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('you are here.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }	
 
 //ice cream markers
-//center sf
-function initMap() {
 	var myLoc = {lat: 37.774929, lng: -122.419416};
 	var map = new google.maps.Map(document.getElementById("map"), {zoom: 13, center: myLoc});
 	var iceCream = [
 	{
 		lat: 37.800621,
 		lng: -122.438711,
-		title: 'test Over the Moon Creamery Marina',
+		title: 'Over the Moon Creamery, Marina',
 	},
 	{
 		lat: 37.794717,
@@ -117,4 +128,12 @@ function initMap() {
 	};
 }
 
+//geoloc error
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
 

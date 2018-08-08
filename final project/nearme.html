@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Kirang+Haerang" rel="stylesheet">
 	<title>Ice Cream Near Me</title>
 	<meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 </head>
 <body>
 	<header class="nav-header">
@@ -22,24 +22,35 @@
 
 	</header>
 
-	<main>
-
-		<div id="map"></div>
-
-		<section class="place-container">
-			<section class="place-list">
-				<a href="#">
-					<p class="Salt & Straw"></p>
-				</a>
-				<p class="place-address"></p>
-			</section>
-
+	<main id="near-me-main">
+		<section class="map-class">
+			<div id="map"></div>
+		</section>
+		<section class="place-list">
+			<h2>Ice Cream Here!</h2>
+			<ul>
+				<li>Ice cream place</li>
+				<li>Ice cream place</li>
+				<li>Ice cream place</li>
+				<li>Ice cream place</li>
+				<li>Ice cream place</li>
+				<li>Ice cream place</li>
+				<li>Ice cream place</li>
+				<li>Ice cream place</li>
+				<li>Ice cream place</li>
+				<li>Ice cream place</li>
+			</ul>
 		</section>
 
 	</main>
+<!--
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsZtvy6z4xYMXIVSv4tnylIQNPo8AvmQY&callback=initMap"
-    async defer></script>
-	<script src="jquery.js"></script>
-	<script src="script.js"></script>
+	async defer></script> -->
+
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsZtvy6z4xYMXIVSv4tnylIQNPo8AvmQY&callback=initMap">
+</script>
+<script src="jquery.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
