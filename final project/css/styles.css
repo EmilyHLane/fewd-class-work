@@ -1,122 +1,171 @@
 
-	
-	#map {
-		height: 400px;
-		width: 400px;
-		border-radius: 100%;
-		display: inline-flex;
-	}
-   
+#map {
+	height: 400px;
+	width: 400px;
+	border-radius: 100%;
+	display: inline-flex;
+}
 
-	* {
-		margin: 0;
-		padding: 0;
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	text-align: center;
+	margin: 0, 10px 10px 10px;
+}
+
+#landing-page {
+	background: url("https://static1.squarespace.com/static/572eb42b7da24fce826c37f2/5758ebdd4c2f85732d8f7e03/575991cab6aa606bb022e0e8/1465487860439/Magpies_Flavors-16x9-v3.jpg?format=1500w");
+	background-size: cover;
+}
+
+#near-me {
+	background: url("../img/twoscoops.jpg");
+	background-size: cover;
+}
+
+#sorry-page {
+	background: url("../img/cones.jpg");
+	background-size: cover;
+}
+
+h1 {
+	font-family: arial;
+	font-size: 50px;
+	color: white;
+	text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
+	margin: 30px 10px 50px 10px;
+}
+
+#sorry-main {
+	height: 400px;
+	width: 400px;
+	border-radius: 100%;
+	background: rgba(102, 49, 17, 0.3);
+	display: inline-block;
+	margin: 50px auto;
+}
+
+#sorry-main h1 {
+	margin: 0;
+	padding: 30px;
+}
+
+#home-header {
+	font-family: 'Lobster Two', cursive;
+	font-size: 60px;
+	margin: 30px 10px 0 10px;
+}
+
+#home-sf {
+	font-family: 'Kirang Haerang', sans-serif;
+	color: rgb(118, 120, 122);
+	font-size: 25px;
+	margin-top: 0;
+}
+
+nav {
+	background-color: rgba(255,255,255,0.1);
+}
+
+nav a {
+	margin: 90px;
+	font-family: 'Kirang Haerang', sans-serif;
+	font-size: 25px;
+	color: rgb(118, 120, 122);
+}
+
+h2 {
+	/*font-family: 'Quicksand', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	color: rgb(102, 49, 17);
+}
+
+.sorry p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+.sorry a {
+	color: white;
+	font-weight: 700;
+}
+
+#homepage-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#homepage-main article {
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 300px;
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+	text-align: center;
+	background-color: rgba(253,231,224, .5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+	margin: 30px 60px;
+}
+
+	#near-me-main {
+		display: flex;
+		justify-content: space-evenly;
 	}
 
-	body {
-		text-align: center;
-		margin: 0, 10px 10px 10px;
+	.place-section {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
-	#landing-page {
-		background: url("https://static1.squarespace.com/static/572eb42b7da24fce826c37f2/5758ebdd4c2f85732d8f7e03/575991cab6aa606bb022e0e8/1465487860439/Magpies_Flavors-16x9-v3.jpg?format=1500w");
-		background-size: cover;
+	.map-class {
+		width: 50%;
 	}
 
-	#sorry-page {
-		background: url("../img/cones.jpg");
-		background-size: cover;
+	.ice-cream-list {
+		text-align: left;
+		margin: 10px 0;
+		line-height: 1.6;
+		max-height: 330px;
+		overflow: auto;
 	}
 
-	h1 {
-		font-family: arial;
-		font-size: 50px;
-		color: white;
-		text-shadow: rgba(10, 189, 240, 0.298039) 3px 3px 0px, rgba(254, 1, 1, 0.298039) -3px -3px 0px;
-		margin: 30px 10px;
-	}
-
-	#sorry-main h1 {
-		margin: 0;
-		padding: 30px;
-	}
-
-	#home-header {
-		font-family: 'Lobster Two', cursive;
-		font-size: 60px;
-		margin: 30px 10px 0 10px;
-	}
-
-	#home-sf {
-		font-family: 'Kirang Haerang', sans-serif;
-		color: rgb(118, 120, 122);
-		font-size: 25px;
-		margin-top: 0;
-	}
-
-	.nav-header {
-		background-color: white;
-	}
-
-	header {
+	.ice-cream-1 {
+		background: rgba(253,231,224, .5);
+		box-sizing: border-box;
 		padding: 10px;
+		width: 100%;
+		max-width: 400px;
+		border: 2px solid rgba(255, 79, 143, 1);
 	}
-	
-	nav a {
-		margin: 90px;
-		font-family: 'Kirang Haerang', sans-serif;
-		font-size: 25px;
-		color: rgb(118, 120, 122);
-	}
-
-	h2 {
-		font-family: 'Quicksand', sans-serif;
-		font-size: 30px;
-		color: rgb(102, 49, 17);
-	}
-
-	.sorry p {
-		ont-family: 'Quicksand', sans-serif;
+	.ice-cream-1 p {
 		font-size: 20px;
-		color: rgb(102, 49, 17);
 	}
 
-
-	.sorry a {
-		color: white;
-		font-weight: 700;
+	.ice-cream-n {
+		background: rgba(102, 49, 17, 0.05);
+		box-sizing: border-box;
+		padding: 10px;
+		width: 100%;
+		max-width: 400px;
+		border-top: 0.5px solid white;
 	}
 
-	#homepage-main {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	#homepage-main article {
-		border: 1px solid rgba(0,0,0,0);
-		border-radius: 300px;
-		width: 300px;
-		height: 300px;
-		margin: 10px;
-		text-align: center;
-		background-color: rgba(253,231,224, .5);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	a {
-		text-decoration: none;
-	}
-
-	main {
-		margin: 30px;
-	}
-
-	#sorry-main {
-		margin: 0;
-		padding-bottom: 300px;
-		background: linear-gradient(white, rgba(255,255,255, 0));	
-	}
 

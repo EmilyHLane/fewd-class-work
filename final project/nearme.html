@@ -5,11 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Lobster|Lobster+Two:400,700|Nixie+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kirang+Haerang" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
 	<title>Ice Cream Near Me</title>
 	<meta name="viewport" content="initial-scale=1.0">
 	<meta charset="utf-8">
 </head>
-<body>
+<body id="near-me">
+	
 	<header class="nav-header">
 		<nav>
 			<a href="index.html">home</a>
@@ -18,39 +20,51 @@
 			<a href="newtosf.html">new to SF</a>
 		</nav>
 
-		<h1>near me</h1>
-
 	</header>
-
+	<h1>near me</h1>
 	<main id="near-me-main">
+
 		<section class="map-class">
 			<div id="map"></div>
 		</section>
-		<section class="place-list">
-			<h2>Ice Cream Here!</h2>
-			<ul>
-				<li>Ice cream place</li>
-				<li>Ice cream place</li>
-				<li>Ice cream place</li>
-				<li>Ice cream place</li>
-				<li>Ice cream place</li>
-				<li>Ice cream place</li>
-				<li>Ice cream place</li>
-				<li>Ice cream place</li>
-				<li>Ice cream place</li>
-				<li>Ice cream place</li>
-			</ul>
+		<section class="place-section">
+			<h2>ice cream here!</h2>
+			<section class="ice-cream-list">
+				<article class="ice-cream-1">
+					<p class="ice-cream-name-1">Bi-Rite Creamery, Mission</p>
+					<a class="ice-cream-web-1" href="http://www.biritecreamery.com">biritecreamery.com</a>
+				</article>
+				<article class="ice-cream-n">
+					<p class="ice-cream-name">Bi-Rite Creamery, NOPA</p>
+					<a class="ice-cream-web" href="http://www.biritecreamery.com">biritecreamery.com</a>
+				</article>
+				<article class="ice-cream-n">
+					<p class="ice-cream-name">Ghirardelli Ice Cream and Chocolate Shop</p>
+					<a class="ice-cream-web" href="https://www.ghirardelli.com">ghirardelli.com</a>
+				</article>
+				<article class="ice-cream-n">
+					<p class="ice-cream-name">Holy Gelato!</p>
+					<a class="ice-cream-web" href="https://www.facebook.com/Holy-Gelato-114346905265499/">facebook/holy-gelato</a>
+				</article>
+
+				<article class="ice-cream-n">
+					<p class="ice-cream-name">Humphry Slocombe, Embarcadero</p>
+					<a class="ice-cream-web" href="http://www.humphryslocombe.com/">humphryslocombe</a>
+				</article>
+				<article class="ice-cream-n">
+					<p class="ice-cream-name">Humphry Slocombe, Mission</p>
+					<a class="ice-cream-web" href="http://www.humphryslocombe.com/">humphryslocombe</a>
+				</article>
+
+			</section>
 		</section>
 
 	</main>
-<!--
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsZtvy6z4xYMXIVSv4tnylIQNPo8AvmQY&callback=initMap"
-	async defer></script> -->
-
+	
+	<script src="jquery.js"></script>
+	<script src="script.js"></script>
 	<script async defer
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsZtvy6z4xYMXIVSv4tnylIQNPo8AvmQY&callback=initMap">
 </script>
-<script src="jquery.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
