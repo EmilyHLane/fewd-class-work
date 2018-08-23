@@ -18,7 +18,7 @@ body {
 
 #landing-page {
 	background: url("https://static1.squarespace.com/static/572eb42b7da24fce826c37f2/5758ebdd4c2f85732d8f7e03/575991cab6aa606bb022e0e8/1465487860439/Magpies_Flavors-16x9-v3.jpg?format=1500w");
-	background-size: cover;
+	/*background-size: cover;*/
 }
 
 #near-me {
@@ -104,7 +104,7 @@ h2 {
 
 #homepage-main article {
 	border: 1px solid rgba(0,0,0,0);
-	border-radius: 300px;
+	border-radius: 100%;
 	width: 300px;
 	height: 300px;
 	margin: 10px;
@@ -123,52 +123,154 @@ main {
 	margin: 30px 60px;
 }
 
-	#near-me-main {
+#near-me-main {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.place-section {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.map-class {
+	width: 50%;
+}
+
+.ice-cream-list {
+	text-align: left;
+	margin: 10px 0;
+	line-height: 1.6;
+	max-height: 355px;
+	overflow: auto;
+	width: 80%;
+	font-family: Arial, sans-serif;
+}
+
+.ice-cream-1 {
+	background: rgba(253,231,224, .5);
+	box-sizing: border-box;
+	padding: 10px;
+	width: 100%;
+	max-width: 400px;
+	border: 2px solid rgba(255, 79, 143, 1);
+}
+.ice-cream-1 p {
+	font-size: 20px;
+}
+
+.ice-cream-n {
+	background: rgba(102, 49, 17, 0.05);
+	box-sizing: border-box;
+	padding: 10px;
+	width: 100%;
+	max-width: 500px;
+	border-top: 0.5px solid white;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+/* media queries for small screens (mobile) */
+@media screen and (max-width: 720px) {
+
+	/* home page */
+	
+	#landing-page {
+		background-size: cover; 
+	}
+	#home-header {
+		font-size: 40px;
+	}
+	
+	#homepage-main {
 		display: flex;
-		justify-content: space-evenly;
+		flex-direction: column;
 	}
 
-	.place-section {
-		width: 50%;
+	#homepage-main article {
+		width: 250px;
+		height: 250px;
+		margin: 10px;
+	}
+	h2 {
+		font-size: 25px;
+	}
+
+	/* nav bar */
+	nav a {
+		margin: 15px;
+		font-size: 22px;
+	}
+
+	/* near me (future: all map pages) */
+	#near-me-main {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-
-	.map-class {
-		width: 50%;
+	#near-me {
+		background-attachment: fixed;
+		background-position: top;
 	}
-
-	.ice-cream-list {
-		text-align: left;
-		margin: 10px 0;
-		line-height: 1.6;
-		max-height: 330px;
-		overflow: auto;
-	}
-
-	.ice-cream-1 {
-		background: rgba(253,231,224, .5);
-		box-sizing: border-box;
-		padding: 10px;
+	.place-section, .map-class, .ice-cream-list {
 		width: 100%;
-		max-width: 400px;
-		border: 2px solid rgba(255, 79, 143, 1);
 	}
-	.ice-cream-1 p {
-		font-size: 20px;
+	main {
+		margin: 30px auto;
+	}
+	#map {
+		height: 320px;
+		width: 320px;
+	}
+	.place-section {
+		margin-top: 30px;
 	}
 
 	.ice-cream-n {
-		background: rgba(102, 49, 17, 0.05);
-		box-sizing: border-box;
-		padding: 10px;
-		width: 100%;
-		max-width: 400px;
-		border-top: 0.5px solid white;
-		border-bottom: 0px;
-		border-left: 0px;
-		border-right: 0px;
+		max-width: none;
+	}
+	h1 {
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+}
+
+/* media queries for medium screens*/
+@media screen and (min-width: 721px) and (max-width: 1060px) {
+	/* home page */
+	
+	#homepage-main article {
+		width: 220px;
+		height: 220px;
+		margin: 10px;
+	}
+	h1 {
+		font-size: 45px;
+	}
+	h2 {
+		font-size: 25px;
+	}
+	main {
+		margin: 30px 10px;
 	}
 
+	/* nav bar */
+	nav a {
+		margin: 60px;
+	}
+
+	/* near me */
+	#map {
+		height: 350px;
+		width: 350px;
+	}
+
+	.ice-cream-list {
+		max-height: 310px; 
+		font-size: 16px; 
+	}
+}
 

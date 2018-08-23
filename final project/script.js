@@ -44,30 +44,28 @@ var iceCream = [
 	title: 'The Baked Bear, North Beach',
 	id: '#bear',
 },
-{
-	lat: 37.803821, 
-	lng: -122.440365,
-	title: 'Smitten, Marina',
-	id: '#smitten-marina',
-},
-{
-	lat: 37.776632,
-	lng: -122.426166,
-	title: 'Salt & Straw, Hayes Valley',
-	id: '#salt-hayes',
-},
-{
-	lat: 37.790240,
-	lng: -122.434169,
-	title: 'Salt & Straw, Fillmore',
-	id: '#salt-fillmore',
-},
+
 {
 	lat: 37.758095,
 	lng: -122.388179,
 	title: 'Mr. and Mrs. Miscellaneous',
 	id: '#mrmrs',
 },
+
+{
+	lat: 37.776632,
+	lng: -122.426166,
+	title: 'Salt & Straw, Hayes Valley',
+	id: '#salt-hayes',
+},
+
+{
+	lat: 37.790240,
+	lng: -122.434169,
+	title: 'Salt & Straw, Fillmore',
+	id: '#salt-fillmore',
+},
+
 {
 	lat:37.779936, 
 	lng: -122.425096,
@@ -80,12 +78,21 @@ var iceCream = [
 	title: 'Smitten, Fillmore',
 	id: '#smitten-fillmore',
 },
+
+{
+	lat: 37.803821, 
+	lng: -122.440365,
+	title: 'Smitten, Marina',
+	id: '#smitten-marina',
+},
+
 {
 	lat: 37.761445, 
 	lng: -122.420870,
 	title: 'Smitten, Mission',
 	id: '#smitten-mission',
 },
+
 {
 	lat: 37.752959,
 	lng: -122.412153,
@@ -147,33 +154,6 @@ function mapIceCream(iceCream) {
 		$(iceId).attr('class', 'ice-cream-1');
 });
 
-
-//Trying to: when user clicks marker, make that ice cream place #1 in the list and give it the styling for #1
-
-//do this for each ice cream marker
-//iceCream.forEach(function (){  
-//when click marker run some funcion
-/*
-            //get iceCream.title and save to var
-			var iceCreamTitle = icecream.title;	
-			var iceCreamHtml = $('p .ice-cream-name').html();
-
-            //if icecream.title matches html from p .ice-cream-name
-            //then remove current class, add class .ice-cream-1
-			if(iceCreamTitle === iceCreamHtml) {
-				 //get the article that has the class name of the match;
-				 //something.removeClass();
-				 //something.addClass('.ice-cream-1');
-				 //push to top of list;
-			} else if (iceCreamTitle !== iceCreamHtml) and (//class is not 'ice-cream-1'){
-				//change class to '.ice-cream-n';
-			} else {
-				//do nothing;
-			}
-}
-	});  
-	
-	*/
 };
 }
 
